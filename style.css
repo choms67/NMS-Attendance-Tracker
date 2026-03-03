@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #2e7d32;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin: 0 0 20px;
+    color: #1b5e20;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date,
+.input-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-section input {
+    width: 60%;
+}
+
+.input-section select {
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background: #388e3c;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 30px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+table th {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Dashboard grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Back button */
+.back-btn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #d32f2f;
+}
+
+
+/* Attendance Button Colors */
+.present-btn { 
+    background: #2e7d32 !important; 
+    color: white; 
+}
+.absent-btn { 
+    background: #d32f2f !important; 
+    color: white; 
+}
+.excuse-btn { 
+    background: #fbc02d !important; 
+    color: black; 
+}
+
+/* Hover effects */
+.present-btn:hover { background: #1b5e20 !important; }
+.absent-btn:hover { background: #b71c1c !important; }
+.excuse-btn:hover { background: #f9a825 !important; }

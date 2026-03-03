@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Attendance Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <button class="back-btn" onclick="goHome()">Back</button>
+
+    <div class="card">
+        <h2>Room Attendance Tracker</h2>
+
+        <div class="date">
+            <strong>Date:</strong>
+            <span id="currentDate"></span>
+        </div>
+
+        <div class="input-section">
+           <select id="sectionSelect">
+    <option value="">Select Section</option>
+            </select>
+
+
+            <input type="text" id="studentName" placeholder="Enter student name">
+            <button onclick="addStudent()">Add</button>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="card">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('attendance')">Attendance</button>
+            <button class="tab-btn" onclick="openTab('dashboard')">Dashboard</button>
+        </div>
+
+        <!-- Attendance Tab -->
+        <div id="attendance" class="tab-content active">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </div>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content">
+            <div class="dashboard-grid" id="dashboardGrid"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
